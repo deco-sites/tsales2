@@ -5,7 +5,7 @@ export interface Props {
   text?: string;
 }
 
-const Coupom = ({ code, text }: Props) => {
+const Coupon = ({ code, text }: Props) => {
   const cContent = code ? <span>{code}</span> : "";
   return (
     <div class="coupom-area">
@@ -20,4 +20,4 @@ const Coupom = ({ code, text }: Props) => {
   );
 };
 
-export default Coupom;
+export default Coupon;
