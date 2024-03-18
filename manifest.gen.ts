@@ -66,8 +66,7 @@ const manifest = {
   "sections": {
     "deco-sites/tsales2/sections/Animation/Animation.tsx": $$$$$$0,
     "deco-sites/tsales2/sections/Cards/IconCardsCarousel.tsx": $$$$$$1,
-    "deco-sites/tsales2/sections/Cards/IconCardsCarouselWithImage.tsx":
-      $$$$$$2,
+    "deco-sites/tsales2/sections/Cards/IconCardsCarouselWithImage.tsx": $$$$$$2,
     "deco-sites/tsales2/sections/Cards/ImageCardsCarousel.tsx": $$$$$$3,
     "deco-sites/tsales2/sections/Cards/ImageCardsCarouselWithImage.tsx":
       $$$$$$4,
@@ -101,8 +100,7 @@ const manifest = {
     "deco-sites/tsales2/sections/Miscellaneous/CookieConsent.tsx": $$$$$$32,
     "deco-sites/tsales2/sections/Miscellaneous/Slide.tsx": $$$$$$33,
     "deco-sites/tsales2/sections/Newsletter/Newsletter.tsx": $$$$$$34,
-    "deco-sites/tsales2/sections/Product/ImageGalleryFrontBack.tsx":
-      $$$$$$35,
+    "deco-sites/tsales2/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$35,
     "deco-sites/tsales2/sections/Product/NotFound.tsx": $$$$$$36,
     "deco-sites/tsales2/sections/Product/NotFoundChallenge.tsx": $$$$$$37,
     "deco-sites/tsales2/sections/Product/ProductDetails.tsx": $$$$$$38,
