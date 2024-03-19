@@ -6,7 +6,7 @@ export interface Props {
 }
 
 const Coupon = ({ code, text }: Props) => {
-  const cContent = code ? <span>{code}</span> : "";
+  const cContent = code ? <span class="text-center border border-dashed border-2 border-sky-500 p-2">{code}</span> : "";
   return (
     <div class="coupom-area">
       <Header
@@ -15,7 +15,7 @@ const Coupon = ({ code, text }: Props) => {
         alignment={"center"}
       />
 
-      {cContent}
+      <div class="text-center mt-10 mb-10">{cContent}</div>
     </div>
   );
 };
