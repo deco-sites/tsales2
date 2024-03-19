@@ -6,7 +6,13 @@ export interface Props {
 }
 
 const Coupon = ({ code, text }: Props) => {
-  const cContent = code ? <span class="text-center border border-dashed border-2 border-sky-500 p-2">{code}</span> : "";
+  const cContent = code
+    ? (
+      <span class="text-center border border-dashed border-2 border-sky-500 p-2">
+        {code}
+      </span>
+    )
+    : "";
   return (
     <div class="coupom-area">
       <Header
