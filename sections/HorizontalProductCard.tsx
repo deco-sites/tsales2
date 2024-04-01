@@ -1,4 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
+import RateSystem from "../islands/RateSystem.tsx";
 
 export interface Props {
   title?: string;
@@ -84,6 +85,7 @@ export default function HorizontalProductCard(
           </button>
         </div>
       </div>
+      <RateSystem infinite={true} initialRates={10} />
     </div>
   );
 }
