@@ -79,11 +79,11 @@ export default function HorizontalProductCard(
       </h1>
       {productsVtex?.map((product) => {
         const productID = product.productID;
-        const image = product.image[0].url;
+        const image = product.image ? product.image[0].url : "";
         const productName = product.name;
         const productDescription = product.description;
-        const productListPrice = product.offers.lowPrice;
-        const productPrice = product.offers.highPrice;
+        const productListPrice = product.offers?.lowPrice || 0;
+        const productPrice = product.offers?.highPrice || 0;
         const productUrl = product.url;
 
         const { listPrice, price } = useOffer(product.offers);
@@ -94,7 +94,7 @@ export default function HorizontalProductCard(
               <figure>
                 <Image
                   class="card"
-                  src={image}
+                  src={image||"/image/produto-teste2.png"}
                   alt={productName}
                   width={160}
                   height={195}
