@@ -19,9 +19,12 @@ export default function currentTemperature(
   { text, temperature }: SectionProps<typeof loader>,
 ) {
   return (
-    <div class="temperature-container text-center">
+    <div class="temperature-container text-center xl:container xl:mx-auto mx-5 md:mx-10 py-10 md:py-24">
       <div class="temperature-description  lg:text-3xl d-flex">
-        <span class="text-base">{text}</span>
+        <h1 class="font-bold text-base-content text-[40px] leading-[120%]">
+          Culturas
+        </h1>
+        <p class="text-base">{text}</p>
         <span>{temperature?.celsius}°C</span>
       </div>
     </div>

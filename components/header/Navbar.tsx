@@ -15,6 +15,8 @@ import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
 
+import TotalVotesOnHeader from "../../islands/TotalVotesOnHeader.tsx";
+
 // Make it sure to render it on the server only. DO NOT render it on an island
 function Navbar(
   { items, searchbar, logo, buttons, logoPosition = "left", device }: {
@@ -96,6 +98,8 @@ function Navbar(
         )}
       </div>
       <div class="flex-none flex items-center justify-end gap-6 col-span-1">
+        <TotalVotesOnHeader />
+
         {!buttons?.hideSearchButton && (
           <div class="flex items-center text-xs font-thin gap-1">
             <SearchButton />SEARCH

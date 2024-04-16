@@ -8,10 +8,15 @@ export interface Props {
   showQuantity: number;
 }
 
-export default function PartialImageGallery({ images, showQuantity }: Props) {
+export default function PartialImageGallery(
+  { title, images, showQuantity }: Props,
+) {
   return (
     <div>
-      <div className="flex flex-wrap gap-2 md:gap-4 justify-center">
+      <h1 class="font-bold text-base-content text-[40px] leading-[120%] text-center">
+        {title}
+      </h1>
+      <div className="flex flex-wrap gap-2 md:gap-4 justify-center mb-5">
         {images.slice(0, showQuantity).map((image, index) => {
           return (
             <div className="w-40 md:w-72 md:h-48 md:max-h-48 flex justify-center items-center overflow-hidden rounded md:rounded-xl duration-300 hover:scale-110">

@@ -4,6 +4,8 @@ import Button from "../../../components/ui/Button.tsx";
 import { sendEvent } from "../../../sdk/analytics.tsx";
 import { useUI } from "../../../sdk/useUI.ts";
 
+import Swal from "npm:sweetalert2@11.0.17";
+
 export interface Props {
   /** @description: sku name */
   eventParams: AddToCartParams;
@@ -28,7 +30,15 @@ const useAddToCart = ({ eventParams, onAddItem }: Props) => {
         params: eventParams,
       });
 
-      displayCart.value = true;
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Adicionado com sucesso ao carrinho!",
+        showConfirmButton: false,
+        timer: 1500,
+      }).then(() => {
+        displayCart.value = true;
+      });
     } finally {
       setLoading(false);
     }
